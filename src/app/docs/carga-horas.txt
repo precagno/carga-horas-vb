@@ -1,0 +1,48 @@
+Nombre del sitio: carga-horas.com
+Descripción: Sistema online de carga de horas docentes de Villa Ballester. 
+
+Acciones: 
+		-Registrar docentes.
+		-Agregar horas.
+	    -Asignarle horas a ese docente.
+
+Páginas: 
+	    -Inicio: tabla con las horas asignadas y sin asignar.
+	    -Docentes: tabla con los Docentes registrados en el sistema.
+	    -Registrar Horas: se ingresan al sistema nuevas horas.
+	    -Registrar docentes: se ingresan al sistema nuevos docentes.
+
+Modelos: docente
+		--ID_docente(int),PK
+		--nombre_completo(string)
+		--edad(int)
+		--direccion(string)
+		--nacionalidad(string)
+		--asignatura(int)//por el momento un profesor sólo puede tener un sólo título.Ejemplo: José solo puede ser docente de Lengua
+		--antiguedad(int)
+		--puntaje(int)
+
+	asignatura:
+		 --ID_asignatura(int),PK
+		 --nombre(string)
+
+	hora:
+		 --ID_hora(int),PK
+		 --colegio(int)
+		 --descripcion(string)
+		 --curso(string)
+
+	colegio:
+		  --ID_colegio(int),PK
+	      --nombre(string)
+		  --direccion(string)
+
+Objetivos: 
+		  -Migrar el contenido desde todoservice al proyecto nuevo y adaptarlo.
+		  -Hacer retoques css y de imagenes generales al sitio.(Como por ejemplo cambiar la imagen principal).
+		  -Que se vean las secciones "agregar docente" , "agregar horas" , "asignar horas","listado de docentes" , "listado de horas"(aún no funcionales).
+		  -crear modelos "docente","asignatura","hora","colegio".
+		  -Usar tabs y tablas de Material para las secciones.
+		  -Crear providers.
+		  -Crear mocks de todos los modelos.
+		  -Consumir datos con los providers (datos mockeados).
