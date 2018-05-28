@@ -38,7 +38,7 @@ Modelos: docente
 		  --direccion(string)
 
 Objetivos: 
-		  -Migrar el contenido desde todoservice al proyecto nuevo y adaptarlo.
+		  -Migrar el contenido desde todoservice al proyecto nuevo y adaptarlo. X
 		  -Hacer retoques css y de imagenes generales al sitio.(Como por ejemplo cambiar la imagen principal).
 		  -Que se vean las secciones "agregar docente" , "agregar horas" , "asignar horas","listado de docentes" , "listado de horas"(aún no funcionales).
 		  -crear modelos "docente","asignatura","hora","colegio".
